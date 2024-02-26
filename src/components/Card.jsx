@@ -1,13 +1,13 @@
-import "./Field.scss";
+import "./Card.scss";
 
 import Word from "./Word.jsx";
 
 const HEARTS = ["🧡", "💛", "💚", "💙", "💜", "❤️"];
 const CATS = ["😻", "🙀", "😽", "😸", "😼"];
 
-function Field() {
+function Card() {
   return (
-    <div className="field">
+    <div className="container">
       <div className="words">
         <Word word="happy" emojies={HEARTS} />
         <Word word="birthday" emojies={HEARTS} />
@@ -17,4 +17,4 @@ function Field() {
   );
 }
 
-export default Field;
+export default Card;

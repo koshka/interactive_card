@@ -1,8 +1,8 @@
 import "./App.css";
-import Field from "./components/Field";
+import Card from "./components/Card";
 
 function App() {
-  return <Field />;
+  return <Card />;
 }
 
 export default App;
