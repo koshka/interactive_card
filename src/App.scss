@@ -10,6 +10,17 @@
   height: 100vh;
 }
 
+.app.card-mode {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
+
+.init-screen {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -44,4 +55,21 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.MuiButtonBase-root.exit-button {
+  bottom: 10px;
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+}
+
+.exit-button-text {
+  transition: transform 0.5s ease-in-out;
+}
+
+.MuiButtonBase-root.exit-button:hover {
+  .exit-button-text {
+    transform: rotate(90deg);
+  }
 }
