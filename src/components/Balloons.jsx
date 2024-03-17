@@ -3,7 +3,7 @@ import Snowflakes from "magic-snowflakes";
 let ANIMATION;
 
 import "./Balloons.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Balloons() {
   const [isFalling, setIsFalling] = useState(false);
@@ -19,6 +19,12 @@ function Balloons() {
     }
     setIsFalling(!isFalling);
   };
+
+  useEffect(() => {
+    return () => {
+      ANIMATION != null && ANIMATION.destroy();
+    };
+  }, []);
 
   return (
     <div className="balloons">
